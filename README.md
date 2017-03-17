@@ -1,4 +1,4 @@
-Python Utilities (Python Packages).
+Python Utilities (Python Package).
 ================================================================================
 
 The README is used to introduce the modules and provide instructions on
