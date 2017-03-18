@@ -8,9 +8,7 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-from app_server.core.configuration.base_config import BaseConfig
-
-class ProductionConfig(BaseConfig):
+class ProductionConfig(object):
 	"""
 	Define class ProductionConfig with attribute(s) and method(s).
 	Production configuration class.

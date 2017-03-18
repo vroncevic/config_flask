@@ -8,8 +8,9 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-from app_server.core.configuration.base_config import BaseConfig
 from os.path import dirname, abspath, join
+
+from app_server.configuration.base_config import BaseConfig
 
 class DevelopmentConfig(BaseConfig):
 	"""

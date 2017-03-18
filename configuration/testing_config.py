@@ -8,9 +8,7 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-from app_server.core.configuration.base_config import BaseConfig
-
-class TestingConfig(BaseConfig):
+class TestingConfig(object):
 	"""
 	Define class TestingConfig with attribute(s) and method(s).
 	Testing configuration class.
