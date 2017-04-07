@@ -1,4 +1,4 @@
-Flask Configuration Mechanism (Python Package).
+Flask Configuration Mechanism (Python 2.7/3.4).
 ================================================================================
 
 The README is used to introduce the modules and provide instructions on
@@ -9,7 +9,7 @@ Part of Flask Web Project.
 
 DEPENDENCIES
 
-These modules requires other modules and libraries (Python 3):
+These modules requires other modules and libraries (Python 2.7/3.4):
 
 	os.path
 
@@ -18,7 +18,7 @@ COPYRIGHT AND LICENCE
 Copyright (C) 2017 by https://github.com/vroncevic/config_flask
 
 This tool is free software; you can redistribute it and/or modify
-it under the same terms as Python itself, either Python version 3.4.2 or,
+it under the same terms as Python itself, either Python version 2.7.9/3.4.2 or,
 at your option, any later version of Python 3 you may have available.
 
 ![alt tag](https://raw.githubusercontent.com/vroncevic/config_flask/master/python_logo.png)

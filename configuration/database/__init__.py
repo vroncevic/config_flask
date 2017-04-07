@@ -11,24 +11,12 @@ __status__ = "Updated"
 class BaseConfig(object):
 	"""
 	Define class BaseConfig with attribute(s) and method(s).
-	Base initial configuration class.
+	Base initial configuration for database.
 	It defines:
 		attribute:
-			SECRET_KEY - Development key for session accessing
-			DEBUG - Enable/Disable debug option
-			BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities
-			WTF_CSRF_ENABLED - Secure forms
-			DEBUG_TB_ENABLED - Flask debug toolbar's
-			DEBUG_TB_INTERCEPT_REDIRECTS - Should intercept redirects?
 			SQLALCHEMY_TRACK_MODIFICATIONS - Requires extra memory (True)
 		method:
 			None
 	"""
 
-	SECRET_KEY = 'my_precious'
-	DEBUG = False
-	BCRYPT_LOG_ROUNDS = 13
-	WTF_CSRF_ENABLED = True
-	DEBUG_TB_ENABLED = False
-	DEBUG_TB_INTERCEPT_REDIRECTS = False
 	SQLALCHEMY_TRACK_MODIFICATIONS = False

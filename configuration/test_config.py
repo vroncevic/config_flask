@@ -8,27 +8,25 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-class TestingConfig(object):
+from app_server.configuration import BaseConfig
+
+class TestConfig(BaseConfig):
 	"""
-	Define class TestingConfig with attribute(s) and method(s).
-	Testing configuration class.
+	Define class DevelopmentConfig with attribute(s) and method(s).
+	Test configuration.
 	It defines:
 		attribute:
 			DEBUG - Enable/Disable debug option
-			TESTING - Enable/Disable testing
-			BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities
 			WTF_CSRF_ENABLED - Secure forms
-			SQLALCHEMY_DATABASE_URI - Set DB URI
 			DEBUG_TB_ENABLED - Flask debug toolbar's
-			PRESERVE_CONTEXT_ON_EXCEPTION - Don't keep exception context
+			DEBUG_TB_INTERCEPT_REDIRECTS - Should intercept redirects?
+			BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities
 		method:
 			None
 	"""
 
 	DEBUG = True
-	TESTING = True
-	BCRYPT_LOG_ROUNDS = 4
 	WTF_CSRF_ENABLED = False
-	SQLALCHEMY_DATABASE_URI = 'sqlite:///'
-	DEBUG_TB_ENABLED = False
-	PRESERVE_CONTEXT_ON_EXCEPTION = False
+	DEBUG_TB_ENABLED = True
+	DEBUG_TB_INTERCEPT_REDIRECTS = True
+	BCRYPT_LOG_ROUNDS = 4

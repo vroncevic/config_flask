@@ -8,21 +8,25 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-class ProductionConfig(object):
+from app_server.configuration import BaseConfig
+
+class ProductionConfig(BaseConfig):
 	"""
-	Define class ProductionConfig with attribute(s) and method(s).
-	Production configuration class.
+	Define class DevelopmentConfig with attribute(s) and method(s).
+	Production configuration.
 	It defines:
 		attribute:
-			SECRET_KEY - Production key for session accessing
 			DEBUG - Enable/Disable debug option
-			SQLALCHEMY_DATABASE_URI - Set DB URI
+			WTF_CSRF_ENABLED - Secure forms
 			DEBUG_TB_ENABLED - Flask debug toolbar's
+			DEBUG_TB_INTERCEPT_REDIRECTS - Should intercept redirects?
+			BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities
 		method:
 			None
 	"""
 
-	SECRET_KEY = 'my_precious'
 	DEBUG = False
-	SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/example'
+	WTF_CSRF_ENABLED = True
 	DEBUG_TB_ENABLED = False
+	DEBUG_TB_INTERCEPT_REDIRECTS = False
+	BCRYPT_LOG_ROUNDS = 4
