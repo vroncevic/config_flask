@@ -1,4 +1,4 @@
-Flask Configuration Mechanism (Python 2.7/3.4).
+Flask Configuration Mechanism (Python codes).
 ================================================================================
 
 The README is used to introduce the modules and provide instructions on
