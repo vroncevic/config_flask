@@ -9,7 +9,7 @@ Part of Flask Web Project.
 
 DEPENDENCIES
 
-These modules requires other modules and libraries (Python 2.7/3.4):
+These modules requires other modules and libraries:
 
 	none
 
