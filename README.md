@@ -22,5 +22,5 @@ it under the same terms as Python itself, either Python version 2.7.9/3.4.2 or,
 at your option, any later version of Python 3 you may have available.
 
 ![alt tag](https://raw.githubusercontent.com/vroncevic/config_flask/master/python_logo.png)
-![alt tag](https://raw.githubusercontent.com/vroncevic/config_flask/master/linux_logo.jpg)
+![alt tag](https://raw.githubusercontent.com/vroncevic/config_flask/master/linux_logo.png)
 
