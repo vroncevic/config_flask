@@ -15,7 +15,7 @@ These modules requires other modules and libraries:
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2017 by https://github.com/vroncevic/config_flask
+Copyright (C) 2018 by https://github.com/vroncevic/config_flask
 
 This tool is free software; you can redistribute it and/or modify
 it under the same terms as Python itself, either Python version 2.7.9/3.4.2 or,
