@@ -16,6 +16,8 @@
 # with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
+from app_server.configuration.database import BaseConfig
+
 __author__ = "Vladimir Roncevic"
 __copyright__ = "Copyright 2018, Free software to use and distributed it."
 __credits__ = ["Vladimir Roncevic"]
@@ -25,18 +27,17 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-from app_server.configuration.database import BaseConfig
-
 
 class TestConfig(BaseConfig):
     """
-    Define class TestConfig with attribute(s) and method(s).
-    Testing database configuration.
-    It defines:
-        attribute:
-            SQLALCHEMY_DATABASE_URI - Set DB URI
-        method:
-            None
+        Define class TestConfig with attribute(s) and method(s).
+        Testing database configuration.
+        It defines:
+            attribute:
+                SQLALCHEMY_DATABASE_URI - Set DB URI
+            method:
+                None
     """
 
     SQLALCHEMY_DATABASE_URI = "sqlite:///test_phase.sqlite"
+

@@ -28,13 +28,14 @@ __status__ = "Updated"
 
 class BaseConfig(object):
     """
-    Define class BaseConfig with attribute(s) and method(s).
-    Base initial configuration for database.
-    It defines:
-        attribute:
-            SQLALCHEMY_TRACK_MODIFICATIONS - Requires extra memory (True)
-        method:
-            None
+        Define class BaseConfig with attribute(s) and method(s).
+        Base initial configuration for database.
+        It defines:
+            attribute:
+                SQLALCHEMY_TRACK_MODIFICATIONS - Requires extra memory (True)
+            method:
+                None
     """
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+

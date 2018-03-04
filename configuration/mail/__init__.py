@@ -28,17 +28,18 @@ __status__ = "Updated"
 
 class BaseConfig(object):
     """
-    Define class BaseConfig with attribute(s) and method(s).
-    Base initial configuration for mail service.
-    It defines:
-        attribute:
-            MAIL_SERVER - Mail server (default: Google)
-            MAIL_PORT - Mail port
-            MAIL_USE_SSL - Use SSL (True/False)
-        method:
-            None
+        Define class BaseConfig with attribute(s) and method(s).
+        Base initial configuration for mail service.
+        It defines:
+            attribute:
+                MAIL_SERVER - Mail server (default: Google)
+                MAIL_PORT - Mail port
+                MAIL_USE_SSL - Use SSL (True/False)
+            method:
+                None
     """
 
     MAIL_SERVER = "smtp.gmail.com"
     MAIL_PORT = 465
     MAIL_USE_SSL = True
+

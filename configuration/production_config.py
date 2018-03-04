@@ -16,6 +16,8 @@
 # with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
+from app_server.configuration import BaseConfig
+
 __author__ = "Vladimir Roncevic"
 __copyright__ = "Copyright 2018, Free software to use and distributed it."
 __credits__ = ["Vladimir Roncevic"]
@@ -25,22 +27,20 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-from app_server.configuration import BaseConfig
-
 
 class ProductionConfig(BaseConfig):
     """
-    Define class DevelopmentConfig with attribute(s) and method(s).
-    Production configuration.
-    It defines:
-        attribute:
-            DEBUG - Enable/Disable debug option
-            WTF_CSRF_ENABLED - Secure forms
-            DEBUG_TB_ENABLED - Flask debug toolbar's
-            DEBUG_TB_INTERCEPT_REDIRECTS - Should intercept redirects?
-            BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities
-        method:
-            None
+        Define class DevelopmentConfig with attribute(s) and method(s).
+        Production configuration.
+        It defines:
+            attribute:
+                DEBUG - Enable/Disable debug option
+                WTF_CSRF_ENABLED - Secure forms
+                DEBUG_TB_ENABLED - Flask debug toolbar's
+                DEBUG_TB_INTERCEPT_REDIRECTS - Should intercept redirects?
+                BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities
+            method:
+                None
     """
 
     DEBUG = False
@@ -48,3 +48,4 @@ class ProductionConfig(BaseConfig):
     DEBUG_TB_ENABLED = False
     DEBUG_TB_INTERCEPT_REDIRECTS = False
     BCRYPT_LOG_ROUNDS = 4
+

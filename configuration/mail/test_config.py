@@ -16,6 +16,8 @@
 # with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
+from app_server.configuration.mail import BaseConfig
+
 __author__ = "Vladimir Roncevic"
 __copyright__ = "Copyright 2018, Free software to use and distributed it."
 __credits__ = ["Vladimir Roncevic"]
@@ -25,22 +27,21 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-from app_server.configuration.mail import BaseConfig
-
 
 class TestConfig(BaseConfig):
     """
-    Define class DevelopmentConfig with attribute(s) and method(s).
-    Define mail test configuration.
-    It defines:
-        attribute:
-            MAIL_USERNAME - Mail username
-            MAIL_PASSWORD - Mail password
-            MAIL_RECIPIENT - Mail username
-        method:
-            None
+        Define class DevelopmentConfig with attribute(s) and method(s).
+        Define mail test configuration.
+        It defines:
+            attribute:
+                MAIL_USERNAME - Mail username
+                MAIL_PASSWORD - Mail password
+                MAIL_RECIPIENT - Mail username
+            method:
+                None
     """
 
     MAIL_USERNAME = ""
     MAIL_PASSWORD = ""
     MAIL_RECIPIENT = ""
+

@@ -28,13 +28,14 @@ __status__ = "Updated"
 
 class BaseConfig(object):
     """
-    Define class BaseConfig with attribute(s) and method(s).
-    Base initial configuration class.
-    It defines:
-        attribute:
-            SECRET_KEY - Development key for session accessing
-        method:
-            None
+        Define class BaseConfig with attribute(s) and method(s).
+        Base initial configuration class.
+        It defines:
+            attribute:
+                SECRET_KEY - Development key for session accessing
+            method:
+                None
     """
 
     SECRET_KEY = "my_precious"
+
