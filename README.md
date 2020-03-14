@@ -11,6 +11,8 @@ other information that should be provided before the modules are installed.
 Part of Flask Web Project.
 
 ![Python package](https://github.com/vroncevic/config_flask/workflows/Python%20package/badge.svg?branch=master)
+ [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/issues)
+ [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/graphs/contributors)
 
 ### INSTALLATION
 Navigate to release [page](https://github.com/vroncevic/config_flask/releases/tag/v1.0) download and extract release archive.
@@ -51,6 +53,8 @@ configuration/
 ```
 
 ### COPYRIGHT AND LICENCE
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Copyright (C) 2018 by https://vroncevic.github.io/config_flask/
 
