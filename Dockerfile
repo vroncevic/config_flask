@@ -15,4 +15,16 @@
 
 FROM debian:10
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends python python-pip tree htop
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
+ tree \
+ htop \
+ python
+
+RUN mkdir /config_flask/
+COPY app_server /app_server/
+RUN find /app_server/ -name "*.editorconfig" -type f -exec rm -Rf {} \;
+RUN mkdir /FlaskApp/
+RUN mv /app_server/ /FlaskApp/
+RUN rm -rf /app_server/
+RUN chmod -R 755 /FlaskApp/
+RUN tree /FlaskApp/

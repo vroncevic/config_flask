@@ -1,15 +1,13 @@
 Flask Configuration Mechanism
 ------------------------------
 
-config_flask is toolset for configuration setup of Flask App.
+**config_flask** is toolset for configuration setup of Flask App.
 
-Developed in python code: 100%.
+Developed in `python <https://www.python.org/>`_ code: **100%**.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
-
-Part of Flask Web Project.
 
 |Python package| |GitHub issues| |Documentation Status| |GitHub contributors|
 
@@ -32,28 +30,28 @@ Part of Flask Web Project.
    self
    modules
 
-INSTALLATION
+Installation
 -------------
 
 Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/config_flask/releases
 
-To install this set of modules type the following:
+To install modules type the following:
 
 .. code-block:: bash
 
     tar xvzf config_flask-x.y.z.tar.gz
     mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 
-DEPENDENCIES
+Dependencies
 -------------
 
-These modules requires other modules and libraries:
+**config_flask** requires other modules and libraries:
 
     * none
 
-PACKAGE STRUCTURE
+Package structure
 ------------------
 
 Expected configuration structure:
@@ -78,7 +76,7 @@ Expected configuration structure:
     │   └── test_config.py
     └── __init__.py
 
-COPYRIGHT AND LICENCE
+Copyright and licence
 ----------------------
 
 |License: GPL v3| |License: Apache 2.0|
@@ -89,9 +87,9 @@ COPYRIGHT AND LICENCE
 .. |License: Apache 2.0| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
    :target: https://opensource.org/licenses/Apache-2.0
 
-Copyright (C) 2018 by https://vroncevic.github.io/config_flask
+Copyright (C) 2018 by `vroncevic.github.io/config_flask <https://vroncevic.github.io/config_flask>`_
 
-This tool is free software; you can redistribute it and/or modify
+**config_flask** is free software; you can redistribute it and/or modify
 it under the same terms as Python itself, either Python version 2.x/3.x or,
 at your option, any later version of Python 3 you may have available.
 

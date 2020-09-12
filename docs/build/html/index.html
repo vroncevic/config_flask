@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html4" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="app_server" href="modules.html" /> 
@@ -49,7 +50,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> config_flask
+            <a href="#" class="icon icon-home" alt="Documentation Home"> config_flask
           
 
           
@@ -76,6 +77,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -92,6 +94,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -130,7 +133,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
       <li>Flask Configuration Mechanism</li>
     
@@ -153,12 +156,11 @@
             
   <div class="section" id="flask-configuration-mechanism">
 <h1>Flask Configuration Mechanism<a class="headerlink" href="#flask-configuration-mechanism" title="Permalink to this headline">¶</a></h1>
-<p>config_flask is toolset for configuration setup of Flask App.</p>
-<p>Developed in python code: 100%.</p>
+<p><strong>config_flask</strong> is toolset for configuration setup of Flask App.</p>
+<p>Developed in <a class="reference external" href="https://www.python.org/">python</a> code: <strong>100%</strong>.</p>
 <p>The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.</p>
-<p>Part of Flask Web Project.</p>
 <p><a class="reference external" href="https://github.com/vroncevic/config_flask/workflows/Python%20package/badge.svg?branch=master"><img alt="Python package" src="https://github.com/vroncevic/config_flask/workflows/Python%20package/badge.svg" /></a> <a class="reference external" href="https://github.com/vroncevic/config_flask/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/vroncevic/config_flask.svg" /></a> <a class="reference external" href="https://config_flask.readthedocs.io/projects/config_flask/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/config_flask/badge/?version=latest" /></a> <a class="reference external" href="https://github.com/vroncevic/config_flask/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/vroncevic/config_flask.svg" /></a></p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
@@ -172,17 +174,17 @@ other information that should be provided before the modules are installed.</p>
 </div>
 </div>
 <div class="section" id="installation">
-<h1>INSTALLATION<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
 <p>Navigate to release <a class="reference external" href="https://github.com/vroncevic/config_flask/releases">page</a> download and extract release archive.</p>
-<p>To install this set of modules type the following:</p>
+<p>To install modules type the following:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar xvzf config_flask-x.y.z.tar.gz
 mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 </pre></div>
 </div>
 </div>
 <div class="section" id="dependencies">
-<h1>DEPENDENCIES<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h1>
-<p>These modules requires other modules and libraries:</p>
+<h1>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h1>
+<p><strong>config_flask</strong> requires other modules and libraries:</p>
 <blockquote>
 <div><ul class="simple">
 <li>none</li>
@@ -190,7 +192,7 @@ mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 </div></blockquote>
 </div>
 <div class="section" id="package-structure">
-<h1>PACKAGE STRUCTURE<a class="headerlink" href="#package-structure" title="Permalink to this headline">¶</a></h1>
+<h1>Package structure<a class="headerlink" href="#package-structure" title="Permalink to this headline">¶</a></h1>
 <p>Expected configuration structure:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>app_server/
 ├── configuration/
@@ -213,10 +215,10 @@ mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 </div>
 </div>
 <div class="section" id="copyright-and-licence">
-<h1>COPYRIGHT AND LICENCE<a class="headerlink" href="#copyright-and-licence" title="Permalink to this headline">¶</a></h1>
+<h1>Copyright and licence<a class="headerlink" href="#copyright-and-licence" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.gnu.org/licenses/gpl-3.0"><img alt="License: GPL v3" src="https://img.shields.io/badge/License-GPLv3-blue.svg" /></a> <a class="reference external" href="https://opensource.org/licenses/Apache-2.0"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" /></a></p>
-<p>Copyright (C) 2018 by <a class="reference external" href="https://vroncevic.github.io/config_flask">https://vroncevic.github.io/config_flask</a></p>
-<p>This tool is free software; you can redistribute it and/or modify
+<p>Copyright (C) 2018 by <a class="reference external" href="https://vroncevic.github.io/config_flask">vroncevic.github.io/config_flask</a></p>
+<p><strong>config_flask</strong> is free software; you can redistribute it and/or modify
 it under the same terms as Python itself, either Python version 2.x/3.x or,
 at your option, any later version of Python 3 you may have available.</p>
 </div>
@@ -247,11 +249,19 @@ at your option, any later version of Python 3 you may have available.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Vladimir Roncevic &lt;elektron.ronca@gmail.com&gt;
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -262,7 +272,6 @@ at your option, any later version of Python 3 you may have available.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
