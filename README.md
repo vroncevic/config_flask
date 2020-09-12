@@ -20,7 +20,7 @@ other information that should be provided before the modules are installed.
 - [Dependencies](#dependencies)
 - [Package structure](#package-structure)
 - [Docs](#docs)
-- [Copyright and Licence](#copyright-and-licence)
+- [Copyright and licence](#copyright-and-licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
