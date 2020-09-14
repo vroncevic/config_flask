@@ -65,7 +65,7 @@ Expected configuration structure:
 
 ### Docs
 
-[![Documentation Status](https://readthedocs.org/projects/config_flask/badge/?version=latest)](https://gen-avr8.readthedocs.io/projects/config_flask/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/config_flask/badge/?version=latest)](https://config_flask.readthedocs.io/projects/config_flask/en/latest/?badge=latest)
 
 * [config_flask.readthedocs.io](https://config_flask.readthedocs.io/en/latest/)
 * [www.python.org](https://www.python.org/)
@@ -76,6 +76,6 @@ Expected configuration structure:
 
 Copyright (C) 2018 by [vroncevic.github.io/config_flask](https://vroncevic.github.io/config_flask/)
 
-This tool is free software; you can redistribute it and/or modify
+**config_flask** is free software; you can redistribute it and/or modify
 it under the same terms as Python itself, either Python version 2.x/3.x or,
 at your option, any later version of Python 3 you may have available.
