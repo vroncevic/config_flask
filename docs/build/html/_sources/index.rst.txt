@@ -24,7 +24,7 @@ other information that should be provided before the modules are installed.
    :target: https://config_flask.readthedocs.io/projects/config_flask/en/latest/?badge=latest
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:
 
    self
@@ -104,7 +104,7 @@ Lets help and support PSF.
 
 |Python Software Foundation|
 
-.. |Python Software Foundation| IMAGE:: https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/psf-logo-alpha.png
+.. |Python Software Foundation| image:: https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/psf-logo-alpha.png
    :target: https://www.python.org/psf/
 
 |Donate|
