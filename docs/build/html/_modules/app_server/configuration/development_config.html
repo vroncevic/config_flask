@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                1.0.0
+                1.2.0
               </div>
             
           
@@ -156,11 +156,11 @@
   <h1>Source code for app_server.configuration.development_config</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: UTF-8 -*-</span>
 
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&#39;&#39;&#39;</span>
 <span class="sd"> Module</span>
 <span class="sd">     development_config.py</span>
 <span class="sd"> Copyright</span>
-<span class="sd">     Copyright (C) 2018 Vladimir Roncevic &lt;elektron.ronca@gmail.com&gt;</span>
+<span class="sd">     Copyright (C) 2017 Vladimir Roncevic &lt;elektron.ronca@gmail.com&gt;</span>
 <span class="sd">     config_flask is free software: you can redistribute it and/or modify it</span>
 <span class="sd">     under the terms of the GNU General Public License as published by the</span>
 <span class="sd">     Free Software Foundation, either version 3 of the License, or</span>
@@ -172,31 +172,31 @@
 <span class="sd">     You should have received a copy of the GNU General Public License along</span>
 <span class="sd">     with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
 <span class="sd"> Info</span>
-<span class="sd">     Define class DevelopmentConfig with attribute(s) and method(s).</span>
+<span class="sd">     Defined class DevelopmentConfig with attribute(s) and method(s).</span>
 <span class="sd">     Development configuration.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&#39;&#39;&#39;</span>
 
 <span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="k">try</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">app_server.configuration</span> <span class="kn">import</span> <span class="n">BaseConfig</span>
-<span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
-    <span class="n">MESSAGE</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="si">{1}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__file__</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">ats_error_message</span><span class="p">:</span>
+    <span class="n">MESSAGE</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="si">{1}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__file__</span><span class="p">,</span> <span class="n">ats_error_message</span><span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">MESSAGE</span><span class="p">)</span>  <span class="c1"># Force close python ATS ##############################</span>
 
-<span class="n">__author__</span> <span class="o">=</span> <span class="s2">&quot;Vladimir Roncevic&quot;</span>
-<span class="n">__copyright__</span> <span class="o">=</span> <span class="s2">&quot;Copyright 2018, Free software to use and distributed it.&quot;</span>
-<span class="n">__credits__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Vladimir Roncevic&quot;</span><span class="p">]</span>
-<span class="n">__license__</span> <span class="o">=</span> <span class="s2">&quot;GNU General Public License (GPL)&quot;</span>
-<span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;1.0.0&quot;</span>
-<span class="n">__maintainer__</span> <span class="o">=</span> <span class="s2">&quot;Vladimir Roncevic&quot;</span>
-<span class="n">__email__</span> <span class="o">=</span> <span class="s2">&quot;elektron.ronca@gmail.com&quot;</span>
-<span class="n">__status__</span> <span class="o">=</span> <span class="s2">&quot;Updated&quot;</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;Vladimir Roncevic&#39;</span>
+<span class="n">__copyright__</span> <span class="o">=</span> <span class="s1">&#39;Copyright 2017, https://vroncevic.github.io/config_flask&#39;</span>
+<span class="n">__credits__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Vladimir Roncevic&#39;</span><span class="p">]</span>
+<span class="n">__license__</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/vroncevic/config_flask/blob/master/LICENSE&#39;</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s1">&#39;1.2.0&#39;</span>
+<span class="n">__maintainer__</span> <span class="o">=</span> <span class="s1">&#39;Vladimir Roncevic&#39;</span>
+<span class="n">__email__</span> <span class="o">=</span> <span class="s1">&#39;elektron.ronca@gmail.com&#39;</span>
+<span class="n">__status__</span> <span class="o">=</span> <span class="s1">&#39;Updated&#39;</span>
 
 
 <div class="viewcode-block" id="DevelopmentConfig"><a class="viewcode-back" href="../../../app_server.configuration.development_config.html#app_server.configuration.development_config.DevelopmentConfig">[docs]</a><span class="k">class</span> <span class="nc">DevelopmentConfig</span><span class="p">(</span><span class="n">BaseConfig</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Define class DevelopmentConfig with attribute(s) and method(s).</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Defined class DevelopmentConfig with attribute(s) and method(s).</span>
 <span class="sd">        Development configuration.</span>
 <span class="sd">        It defines:</span>
 
@@ -208,7 +208,7 @@
 <span class="sd">                | BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities</span>
 <span class="sd">            :methods:</span>
 <span class="sd">                | None</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    &#39;&#39;&#39;</span>
 
     <span class="n">DEBUG</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="n">WTF_CSRF_ENABLED</span> <span class="o">=</span> <span class="kc">False</span>
@@ -228,7 +228,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Vladimir Roncevic &lt;elektron.ronca@gmail.com&gt;
+        &copy; Copyright 2017, Vladimir Roncevic &lt;elektron.ronca@gmail.com&gt;
 
     </p>
   </div>

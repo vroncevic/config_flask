@@ -18,8 +18,14 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
  tree \
  htop \
- python
+ python \
+ python-pip \
+ python-wheel
 
+RUN pip install --upgrade setuptools
+COPY requirements.txt /
+RUN pip install -r requirements.txt
+RUN rm -f requirements.txt
 RUN mkdir /config_flask/
 COPY app_server /app_server/
 RUN find /app_server/ -name "*.editorconfig" -type f -exec rm -Rf {} \;
