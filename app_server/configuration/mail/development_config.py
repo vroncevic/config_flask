@@ -31,8 +31,8 @@ except ImportError as ats_error_message:
 __author__ = 'Vladimir Roncevic'
 __copyright__ = 'Copyright 2017, https://vroncevic.github.io/config_flask'
 __credits__ = ['Vladimir Roncevic']
-__license__ = 'https://github.com/vroncevic/config_flask/blob/master/LICENSE'
-__version__ = '1.2.0'
+__license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
+__version__ = '1.3.0'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -45,9 +45,9 @@ class DevelopmentConfig(BaseConfig):
         It defines:
 
             :attributes:
-                | MAIL_USERNAME - Mail username (sender)
-                | MAIL_PASSWORD - Mail password (sender)
-                | MAIL_RECIPIENT - Mail username (recipient)
+                | MAIL_USERNAME - mail username (sender).
+                | MAIL_PASSWORD - mail password (sender).
+                | MAIL_RECIPIENT - mail username (recipient).
             :methods:
                 | None
     '''

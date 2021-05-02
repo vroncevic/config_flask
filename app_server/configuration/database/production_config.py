@@ -31,8 +31,8 @@ except ImportError as ats_error_message:
 __author__ = "Vladimir Roncevic"
 __copyright__ = "Copyright 2017, https://vroncevic.github.io/config_flask"
 __credits__ = ["Vladimir Roncevic"]
-__license__ = "https://github.com/vroncevic/config_flask/blob/master/LICENSE"
-__version__ = "1.2.0"
+__license__ = "https://github.com/vroncevic/config_flask/blob/dev/LICENSE"
+__version__ = "1.3.0"
 __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
@@ -45,12 +45,12 @@ class ProductionConfig(BaseConfig):
         It defines:
 
             :attributes:
-                | DB_USER - Database connection username
-                | DB_PASSWORD - Database connection user password
-                | DB_HOST - Database server address
-                | DB_PORT - Database server port
-                | DB_DIALECT - Database dialect prefix
-                | SQLALCHEMY_DATABASE_URI - Set DB URI
+                | DB_USER - database connection username.
+                | DB_PASSWORD - database connection user password.
+                | DB_HOST - database server address.
+                | DB_PORT - database server port.
+                | DB_DIALECT - database dialect prefix.
+                | SQLALCHEMY_DATABASE_URI - set DB URI.
             :methods:
                 | None
     """

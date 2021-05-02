@@ -23,8 +23,8 @@
 __author__ = 'Vladimir Roncevic'
 __copyright__ = 'Copyright 2017, https://vroncevic.github.io/config_flask'
 __credits__ = ['Vladimir Roncevic']
-__license__ = 'https://github.com/vroncevic/config_flask/blob/master/LICENSE'
-__version__ = '1.2.0'
+__license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
+__version__ = '1.3.0'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -37,7 +37,7 @@ class BaseConfig(object):
         It defines:
 
             :attributes:
-                | SECRET_KEY - Development key for session accessing
+                | SECRET_KEY - development key for session accessing.
             :methods:
                 | None
     '''
