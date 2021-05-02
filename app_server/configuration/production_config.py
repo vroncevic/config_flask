@@ -31,8 +31,8 @@ except ImportError as ats_error_message:
 __author__ = 'Vladimir Roncevic'
 __copyright__ = 'Copyright 2017, https://vroncevic.github.io/config_flask'
 __credits__ = ['Vladimir Roncevic']
-__license__ = 'https://github.com/vroncevic/config_flask/blob/master/LICENSE'
-__version__ = '1.2.0'
+__license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
+__version__ = '1.3.0'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -45,11 +45,11 @@ class ProductionConfig(BaseConfig):
         It defines:
 
             :attributes:
-                | DEBUG - Enable/Disable debug option
-                | WTF_CSRF_ENABLED - Secure forms
-                | DEBUG_TB_ENABLED - Flask debug toolbar's
-                | DEBUG_TB_INTERCEPT_REDIRECTS - Should intercept redirects?
-                | BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities
+                | DEBUG - enable/Disable debug option.
+                | WTF_CSRF_ENABLED - secure forms.
+                | DEBUG_TB_ENABLED - flask debug toolbar's.
+                | DEBUG_TB_INTERCEPT_REDIRECTS - should intercept redirects.
+                | BCRYPT_LOG_ROUNDS - for bcrypt hashing utilities.
             :methods:
                 | None
     '''
