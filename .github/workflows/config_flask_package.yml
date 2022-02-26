@@ -2,8 +2,12 @@ name: Python package
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'config_flask/**'
   pull_request:
     branches: [ master ]
+    paths:
+      - 'config_flask/**'
 jobs:
   build:
     runs-on: ubuntu-latest
