@@ -63,7 +63,7 @@ class GeneralConfigProductionTestCase(unittest.TestCase):
                 | test_bcrypt_log_rounds - test BCRYPT LOG ROUNDS check.
     '''
 
-    def setUp(self) -> None:
+    def setUp(self):
         '''Call before test cases.'''
         self.debug = ProductionConfig.DEBUG
         self.wtf_csrf_enabled = ProductionConfig.WTF_CSRF_ENABLED
@@ -71,7 +71,7 @@ class GeneralConfigProductionTestCase(unittest.TestCase):
         self.debug_tb_intercept_redirects = ProductionConfig.DEBUG_TB_INTERCEPT_REDIRECTS
         self.bcrypt_log_rounds = ProductionConfig.BCRYPT_LOG_ROUNDS
 
-    def tearDown(self) -> None:
+    def tearDown(self):
         '''Call after test cases.'''
         self.debug = None
         self.wtf_csrf_enabled = None
@@ -79,23 +79,23 @@ class GeneralConfigProductionTestCase(unittest.TestCase):
         self.debug_tb_intercept_redirects = None
         self.bcrypt_log_rounds = None
 
-    def test_debug(self) -> None:
+    def test_debug(self):
         '''Test debug check.'''
         self.assertEqual(self.debug, False)
 
-    def test_wtf_csrf_enabled(self) -> None:
+    def test_wtf_csrf_enabled(self):
         '''Test CSRF check.'''
         self.assertEqual(self.wtf_csrf_enabled, True)
 
-    def test_debug_tb_enabled(self) -> None:
+    def test_debug_tb_enabled(self):
         '''Test DEBUG TB check.'''
         self.assertEqual(self.debug_tb_enabled, False)
 
-    def test_debug_tb_intercept_redirects(self) -> None:
+    def test_debug_tb_intercept_redirects(self):
         '''Test DEBUG TB INTERCEPT REDIRECTS check.'''
         self.assertEqual(self.debug_tb_intercept_redirects, False)
 
-    def test_bcrypt_log_rounds(self) -> None:
+    def test_bcrypt_log_rounds(self):
         '''Test BCRYPT LOG ROUNDS check.'''
         self.assertEqual(self.bcrypt_log_rounds, 4)
 

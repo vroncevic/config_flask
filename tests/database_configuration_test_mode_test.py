@@ -57,21 +57,21 @@ class DatabaseTestTestCase(unittest.TestCase):
                 | test_sqlalchemy_database_uri - test sqlalchemy database uri check.
     '''
 
-    def setUp(self) -> None:
+    def setUp(self):
         '''Call before test case.'''
         self.sqlalchemy_track_modifications = TestConfig.SQLALCHEMY_TRACK_MODIFICATIONS
         self.sqlalchemy_database_uri = TestConfig.SQLALCHEMY_DATABASE_URI
 
-    def tearDown(self) -> None:
+    def tearDown(self):
         '''Call after test case.'''
         self.sqlalchemy_track_modifications = None
         self.sqlalchemy_database_uri = None
 
-    def test_sqlalchemy_track_modifications(self) -> None:
+    def test_sqlalchemy_track_modifications(self):
         '''Test sqlalchemy track modifications check.'''
         self.assertEqual(self.sqlalchemy_track_modifications, False)
 
-    def test_sqlalchemy_database_uri(self) -> None:
+    def test_sqlalchemy_database_uri(self):
         '''Test sqlalchemy database uri check.'''
         self.assertEqual(isinstance(self.sqlalchemy_database_uri, str), True)
 

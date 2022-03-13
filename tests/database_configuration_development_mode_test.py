@@ -67,7 +67,7 @@ class DatabaseDevelopmentTestCase(unittest.TestCase):
                 | test_sqlalchemy_database_uri - test sqlalchemy database uri check.
     '''
 
-    def setUp(self) -> None:
+    def setUp(self):
         '''Call before test case.'''
         self.sqlalchemy_track_modifications = DevelopmentConfig.SQLALCHEMY_TRACK_MODIFICATIONS
         self.db_user = DevelopmentConfig.DB_USER
@@ -77,7 +77,7 @@ class DatabaseDevelopmentTestCase(unittest.TestCase):
         self.db_dialect = DevelopmentConfig.DB_DIALECT
         self.sqlalchemy_database_uri = DevelopmentConfig.SQLALCHEMY_DATABASE_URI
 
-    def tearDown(self) -> None:
+    def tearDown(self):
         '''Call after test case.'''
         self.sqlalchemy_track_modifications = None
         self.db_user = None
@@ -87,31 +87,31 @@ class DatabaseDevelopmentTestCase(unittest.TestCase):
         self.db_dialect = None
         self.sqlalchemy_database_uri = None
 
-    def test_sqlalchemy_track_modifications(self) -> None:
+    def test_sqlalchemy_track_modifications(self):
         '''Test sqlalchemy track modifications check.'''
         self.assertEqual(self.sqlalchemy_track_modifications, False)
 
-    def test_db_user(self) -> None:
+    def test_db_user(self):
         '''Test db user check.'''
         self.assertEqual(isinstance(self.db_user, str), True)
 
-    def test_db_password(self) -> None:
+    def test_db_password(self):
         '''Test db password check.'''
         self.assertEqual(isinstance(self.db_password, str), True)
 
-    def test_db_host(self) -> None:
+    def test_db_host(self):
         '''Test db host check.'''
         self.assertEqual(isinstance(self.db_host, str), True)
 
-    def test_db_port(self) -> None:
+    def test_db_port(self):
         '''Test db port check.'''
         self.assertEqual(self.db_port, 3306)
 
-    def test_db_dialect(self) -> None:
+    def test_db_dialect(self):
         '''Test db dialect check.'''
         self.assertEqual(isinstance(self.db_dialect, str), True)
 
-    def test_sqlalchemy_database_uri(self) -> None:
+    def test_sqlalchemy_database_uri(self):
         '''Test sqlalchemy database uri check.'''
         self.assertEqual(isinstance(self.sqlalchemy_database_uri, str), True)
 

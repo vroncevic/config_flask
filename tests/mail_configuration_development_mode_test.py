@@ -65,7 +65,7 @@ class MailDevelopmentTestCase(unittest.TestCase):
                 | test_mail_recipient - test mail recipient check.
     '''
 
-    def setUp(self) -> None:
+    def setUp(self):
         '''Call before test cases.'''
         self.mail_server = DevelopmentConfig.MAIL_SERVER
         self.mail_port = DevelopmentConfig.MAIL_PORT
@@ -74,7 +74,7 @@ class MailDevelopmentTestCase(unittest.TestCase):
         self.mail_password = DevelopmentConfig.MAIL_PASSWORD
         self.mail_recipient = DevelopmentConfig.MAIL_RECIPIENT
 
-    def tearDown(self) -> None:
+    def tearDown(self):
         '''Call after test cases.'''
         self.mail_server = None
         self.mail_port = None
@@ -83,27 +83,27 @@ class MailDevelopmentTestCase(unittest.TestCase):
         self.mail_password = None
         self.mail_recipient = None
 
-    def test_mail_server(self) -> None:
+    def test_mail_server(self):
         '''Test mail server check.'''
         self.assertEqual(isinstance(self.mail_server, str), True)
 
-    def test_mail_port(self) -> None:
+    def test_mail_port(self):
         '''Test mail port check.'''
         self.assertEqual(self.mail_port, 465)
 
-    def test_mail_use_ssl(self) -> None:
+    def test_mail_use_ssl(self):
         '''Test mail use ssl check.'''
         self.assertEqual(self.mail_use_ssl, True)
 
-    def test_mail_username(self) -> None:
+    def test_mail_username(self):
         '''Test mail username check.'''
         self.assertEqual(isinstance(self.mail_username, str), True)
 
-    def test_mail_password(self) -> None:
+    def test_mail_password(self):
         '''Test mail password check.'''
         self.assertEqual(isinstance(self.mail_password, str), True)
 
-    def test_mail_recipient(self) -> None:
+    def test_mail_recipient(self):
         '''Test mail received check.'''
         self.assertEqual(isinstance(self.mail_recipient, str), True)
 
