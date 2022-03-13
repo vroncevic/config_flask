@@ -25,7 +25,7 @@ other information that should be provided before the modules are installed.
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
+   :caption: Contents
 
    self
    modules
@@ -37,7 +37,7 @@ Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/config_flask/releases
 
-To install modules type the following:
+To install modules type the following
 
 .. code-block:: bash
 
@@ -54,14 +54,14 @@ You can use Docker to create image/container.
 Dependencies
 -------------
 
-**config_flask** requires other modules and libraries:
+**config_flask** requires other modules and libraries
 
     * none
 
 Package structure
 ------------------
 
-Expected configuration structure:
+Expected configuration structure
 
 .. code-block:: bash
 
