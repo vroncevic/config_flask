@@ -1,0 +1,19 @@
+version: 2.1
+executors:
+  config-flask-executor:
+    docker:
+      - image: cimg/base:stable
+        auth:
+          username: $DOCKER_HUB_USER
+          password: $DOCKER_HUB_PASSWORD
+jobs:
+  config_flask:
+    executor: config-flask-executor
+    steps:
+      - checkout
+      - run: |
+          # echo Hello, World!
+workflows:
+  my-custom-workflow:
+    jobs:
+      - config_flask

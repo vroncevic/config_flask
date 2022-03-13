@@ -3,11 +3,11 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'config_flask/**'
+      - 'app_server/**'
   pull_request:
     branches: [ master ]
     paths:
-      - 'config_flask/**'
+      - 'app_server/**'
 jobs:
   build:
     runs-on: ubuntu-latest

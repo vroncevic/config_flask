@@ -6,6 +6,9 @@
 
 Developed in **[python](https://www.python.org/)** code: **100%**.
 
+[![codecov](https://codecov.io/gh/vroncevic/config_flask/branch/master/graph/badge.svg?token=E7MQUHES7I)](https://codecov.io/gh/vroncevic/config_flask)
+[![CircleCI](https://circleci.com/gh/vroncevic/config_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/config_flask/tree/master)
+
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
@@ -28,7 +31,7 @@ other information that should be provided before the modules are installed.
 
 Navigate to **[release page](https://github.com/vroncevic/config_flask/releases)** download and extract release archive.
 
-To install modules type the following:
+To install modules type the following
 ```
 tar xvzf config_flask-x.y.z.tar.gz
 mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
@@ -40,13 +43,13 @@ Or You can use docker to create image/container.
 
 ### Dependencies
 
-**config_flask** requires other modules and libraries:
+**config_flask** requires other modules and libraries
 
     * none
 
 ### Package structure
 
-Expected configuration structure:
+Expected configuration structure
 ```
  app_server/
  ├── configuration/
