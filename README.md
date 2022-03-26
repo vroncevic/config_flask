@@ -4,7 +4,7 @@
 
 **config_flask** is toolset for configuration setup of Flask App.
 
-Developed in **[python](https://www.python.org/)** code: **100%**.
+Developed in **[python](https://www.python.org/)** code.
 
 [![codecov](https://codecov.io/gh/vroncevic/config_flask/branch/master/graph/badge.svg?token=E7MQUHES7I)](https://codecov.io/gh/vroncevic/config_flask)
 [![CircleCI](https://circleci.com/gh/vroncevic/config_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/config_flask/tree/master)
@@ -23,6 +23,7 @@ other information that should be provided before the modules are installed.
 - [Dependencies](#dependencies)
 - [Package structure](#package-structure)
 - [Docs](#docs)
+- [Contributing](#contributing)
 - [Copyright and licence](#copyright-and-licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -32,7 +33,8 @@ other information that should be provided before the modules are installed.
 Navigate to **[release page](https://github.com/vroncevic/config_flask/releases)** download and extract release archive.
 
 To install modules type the following
-```
+
+```bash
 tar xvzf config_flask-x.y.z.tar.gz
 mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 ```
@@ -50,7 +52,8 @@ Or You can use docker to create image/container.
 ### Package structure
 
 Expected configuration structure
-```
+
+```bash
  app_server/
  ├── configuration/
  │   ├── database/
@@ -74,8 +77,12 @@ Expected configuration structure
 
 [![Documentation Status](https://readthedocs.org/projects/config_flask/badge/?version=latest)](https://config_flask.readthedocs.io/projects/config_flask/en/latest/?badge=latest)
 
-* [config_flask.readthedocs.io](https://config_flask.readthedocs.io/en/latest/)
-* [www.python.org](https://www.python.org/)
+- [config_flask.readthedocs.io](https://config_flask.readthedocs.io/en/latest/)
+- [www.python.org](https://www.python.org/)
+
+### Contributing
+
+[Contributing to config_flask](CONTRIBUTING.md)
 
 ### Copyright and licence
 
