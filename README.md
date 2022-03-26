@@ -2,7 +2,7 @@
 
 # Flask Configuration Mechanism
 
-**config_flask** is toolset for configuration setup of Flask App.
+**config_flask** is toolset for configuration setup of Flask Web App.
 
 Developed in **[python](https://www.python.org/)** code.
 
