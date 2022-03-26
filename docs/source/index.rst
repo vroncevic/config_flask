@@ -3,7 +3,7 @@ Flask Configuration Mechanism
 
 **config_flask** is toolset for configuration setup of Flask App.
 
-Developed in `python <https://www.python.org/>`_ code: **100%**.
+Developed in `python <https://www.python.org/>`_ code.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
