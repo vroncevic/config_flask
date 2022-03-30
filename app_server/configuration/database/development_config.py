@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-"""
+'''
  Module
      development_config.py
  Copyright
@@ -18,28 +18,28 @@
  Info
      Defined class DevelopmentConfig with attribute(s) and method(s).
      Development configuration.
-"""
+'''
 
 import sys
 
 try:
     from app_server.configuration.database import BaseConfig
 except ImportError as ats_error_message:
-    MESSAGE = "\n{0}\n{1}\n".format(__file__, ats_error_message)
+    MESSAGE = '\n{0}\n{1}\n'.format(__file__, ats_error_message)
     sys.exit(MESSAGE)  # Force close python ATS ##############################
 
-__author__ = "Vladimir Roncevic"
-__copyright__ = "Copyright 2017, https://vroncevic.github.io/config_flask"
-__credits__ = ["Vladimir Roncevic"]
-__license__ = "https://github.com/vroncevic/config_flask/blob/dev/LICENSE"
-__version__ = "1.4.0"
-__maintainer__ = "Vladimir Roncevic"
-__email__ = "elektron.ronca@gmail.com"
-__status__ = "Updated"
+__author__ = 'Vladimir Roncevic'
+__copyright__ = 'Copyright 2017, https://vroncevic.github.io/config_flask'
+__credits__ = ['Vladimir Roncevic']
+__license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
+__version__ = '1.4.0'
+__maintainer__ = 'Vladimir Roncevic'
+__email__ = 'elektron.ronca@gmail.com'
+__status__ = 'Updated'
 
 
 class DevelopmentConfig(BaseConfig):
-    """
+    '''
         Defined class DevelopmentConfig with attribute(s) and method(s).
         Development database configuration.
         It defines:
@@ -53,14 +53,14 @@ class DevelopmentConfig(BaseConfig):
                 | SQLALCHEMY_DATABASE_URI - set DB URI.
             :methods:
                 | None
-    """
+    '''
 
-    DB_USER = "mydbuser"
-    DB_PASSWORD = "mydbpassword"
-    DB_HOST = "127.0.0.1"
+    DB_USER = 'mydbuser'
+    DB_PASSWORD = 'mydbpassword'
+    DB_HOST = '127.0.0.1'
     DB_PORT = 3306
-    DB_NAME = "manage_users"
-    DB_DIALECT = "mysql+mysqlconnector"
-    SQLALCHEMY_DATABASE_URI = "{0}://{1}:{2}@{3}:{4}/{5}".format(
+    DB_NAME = 'manage_users'
+    DB_DIALECT = 'mysql+mysqlconnector'
+    SQLALCHEMY_DATABASE_URI = '{0}://{1}:{2}@{3}:{4}/{5}'.format(
         DB_DIALECT, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME
     )

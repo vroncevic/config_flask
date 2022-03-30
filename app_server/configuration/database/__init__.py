@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-"""
+'''
  Module
      __init__.py
  Copyright
@@ -18,20 +18,20 @@
  Info
      Defined class BaseConfig with attribute(s) and method(s).
      Base initial configuration for database.
-"""
+'''
 
-__author__ = "Vladimir Roncevic"
-__copyright__ = "Copyright 2017, https://vroncevic.github.io/config_flask"
-__credits__ = ["Vladimir Roncevic"]
-__license__ = "https://github.com/vroncevic/config_flask/blob/dev/LICENSE"
-__version__ = "1.4.0"
-__maintainer__ = "Vladimir Roncevic"
-__email__ = "elektron.ronca@gmail.com"
-__status__ = "Updated"
+__author__ = 'Vladimir Roncevic'
+__copyright__ = 'Copyright 2017, https://vroncevic.github.io/config_flask'
+__credits__ = ['Vladimir Roncevic']
+__license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
+__version__ = '1.4.0'
+__maintainer__ = 'Vladimir Roncevic'
+__email__ = 'elektron.ronca@gmail.com'
+__status__ = 'Updated'
 
 
 class BaseConfig(object):
-    """
+    '''
         Defined class BaseConfig with attribute(s) and method(s).
         Base initial configuration for database.
         It defines:
@@ -40,6 +40,6 @@ class BaseConfig(object):
                 | SQLALCHEMY_TRACK_MODIFICATIONS - requires extra memory.
             :methods:
                 | None
-    """
+    '''
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
