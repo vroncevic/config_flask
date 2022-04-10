@@ -2,18 +2,18 @@
 
 # Flask Configuration Mechanism
 
-**config_flask** is toolset for configuration setup of Flask Web App.
+☯️ **config_flask** is toolset for configuration setup of Flask Web App.
 
-Developed in **[python](https://www.python.org/)** code.
+Developed in 🐍 **[python](https://www.python.org/)** code.
 
 [![codecov](https://codecov.io/gh/vroncevic/config_flask/branch/master/graph/badge.svg?token=E7MQUHES7I)](https://codecov.io/gh/vroncevic/config_flask)
-[![CircleCI](https://circleci.com/gh/vroncevic/config_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/config_flask/tree/master)
+[![circleci](https://circleci.com/gh/vroncevic/config_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/config_flask/tree/master)
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
 
-![Python package](https://github.com/vroncevic/config_flask/workflows/Python%20package/badge.svg?branch=master) [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/graphs/contributors)
+[![config_flask py code checker](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_py_checker.yml/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_py_checker.yml) [![config_flask python package checker](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package.yml/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package.yml) [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/graphs/contributors)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -30,7 +30,9 @@ other information that should be provided before the modules are installed.
 
 ### Installation
 
-Navigate to **[release page](https://github.com/vroncevic/config_flask/releases)** download and extract release archive.
+![ubuntu linux os](https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/ubuntuxis.png)
+
+Navigate to **[release page](https://github.com/vroncevic/config_flask/releases)** download and extract release archive 📦.
 
 To install modules type the following
 
@@ -39,9 +41,9 @@ tar xvzf config_flask-x.y.z.tar.gz
 mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 ```
 
-Or You can use docker to create image/container.
+Or You can use docker to create image/container 🚢.
 
-[![config_flask docker checker](https://github.com/vroncevic/config_flask/workflows/config_flask%20docker%20checker/badge.svg)](https://github.com/vroncevic/config_flask/actions?query=workflow%3A%22config_flask+docker+checker%22)
+[![config_flask docker checker](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_docker_checker.yml/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_docker_checker.yml)
 
 ### Dependencies
 
@@ -51,7 +53,7 @@ Or You can use docker to create image/container.
 
 ### Package structure
 
-Expected configuration structure
+🧰 Expected configuration structure
 
 ```bash
  app_server/
@@ -75,14 +77,17 @@ Expected configuration structure
 
 ### Docs
 
-[![Documentation Status](https://readthedocs.org/projects/config_flask/badge/?version=latest)](https://config_flask.readthedocs.io/projects/config_flask/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/config-flask/badge/?version=latest)](https://config-flask.readthedocs.io/en/latest/?badge=latest)
+ [![Pages build deployment](https://github.com/vroncevic/config_flask/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/pages/pages-build-deployment)
+
+📗 More documentation and info at
 
 - [config_flask.readthedocs.io](https://config_flask.readthedocs.io/en/latest/)
 - [www.python.org](https://www.python.org/)
 
 ### Contributing
 
-[Contributing to config_flask](CONTRIBUTING.md)
+🌎 🌍 🌏 [Contributing to config_flask](CONTRIBUTING.md)
 
 ### Copyright and licence
 

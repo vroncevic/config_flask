@@ -4,4 +4,4 @@ The following is a set of guidelines for contributing to config_flask and its pa
 
 ## Code of Conduct
 
-config_flask project and everyone participating in it is governed by the [config_flask Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [config_flask](mailto:elektron.ronca@gmail.com).
+config_flask project and everyone participating in it is governed by the [config_flask code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [config_flask](mailto:elektron.ronca@gmail.com).
