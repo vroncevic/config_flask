@@ -5,14 +5,25 @@ Flask Configuration Mechanism
 
 Developed in `python <https://www.python.org/>`_ code.
 
+|CodeCov| |CircleCI|
+
+.. |CodeCov| image:: https://codecov.io/gh/vroncevic/config_flask/branch/dev/graph/badge.svg
+   :target: https://codecov.io/gh/vroncevic/config_flask
+
+.. |CircleCI| image:: https://circleci.com/gh/vroncevic/config_flask/tree/master.svg
+   :target: https://circleci.com/gh/vroncevic/config_flask/tree/master
+
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
 
-|Python package| |GitHub issues| |Documentation Status| |GitHub contributors|
+|Python checker| |Python package| |GitHub issues| |Documentation Status| |GitHub contributors|
 
-.. |Python package| image:: https://github.com/vroncevic/config_flask/workflows/Python%20package/badge.svg
-   :target: https://github.com/vroncevic/config_flask/workflows/Python%20package/badge.svg?branch=master
+.. |Python checker| image:: https://github.com/vroncevic/config_flask/actions/workflows/config_flask_py_checker.yml/badge.svg
+   :target: https://github.com/vroncevic/config_flask/actions/workflows/config_flask_py_checker.yml
+
+.. |Python package| image:: https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package.yml/badge.svg
+   :target: https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package.yml
 
 .. |GitHub issues| image:: https://img.shields.io/github/issues/vroncevic/config_flask.svg
    :target: https://github.com/vroncevic/config_flask/issues
@@ -20,8 +31,8 @@ other information that should be provided before the modules are installed.
 .. |GitHub contributors| image:: https://img.shields.io/github/contributors/vroncevic/config_flask.svg
    :target: https://github.com/vroncevic/config_flask/graphs/contributors
 
-.. |Documentation Status| image:: https://readthedocs.org/projects/config_flask/badge/?version=latest
-   :target: https://config_flask.readthedocs.io/projects/config_flask/en/latest/?badge=latest
+.. |Documentation Status| image:: https://readthedocs.org/projects/config_flask/badge/?version=master
+   :target: https://config_flask.readthedocs.io/projects/config_flask/en/master/?badge=master
 
 .. toctree::
    :maxdepth: 4
@@ -32,6 +43,10 @@ other information that should be provided before the modules are installed.
 
 Installation
 -------------
+
+|Ubuntu Linux OS|
+
+.. |Ubuntu Linux OS| image:: https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/ubuntuxis.png
 
 Navigate to release `page`_ download and extract release archive.
 
@@ -48,8 +63,8 @@ You can use Docker to create image/container.
 
 |GitHub docker checker|
 
-.. |GitHub docker checker| image:: https://github.com/vroncevic/config_flask/workflows/config_flask%20docker%20checker/badge.svg
-   :target: https://github.com/vroncevic/config_flask/actions?query=workflow%3A%22config_flask+docker+checker%22
+.. |GitHub docker checker| image:: https://github.com/vroncevic/config_flask/actions/workflows/config_flask_docker_checker.yml/badge.svg
+   :target: https://github.com/vroncevic/config_flask/actions/workflows/config_flask_docker_checker.yml
 
 Dependencies
 -------------
