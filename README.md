@@ -13,7 +13,7 @@ The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
 
-[![config_flask py code checker](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_py_checker.yml/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_py_checker.yml) [![config_flask python package checker](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package.yml/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package.yml) [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/graphs/contributors)
+[![config_flask python checker](https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_python_checker?style=flat&label=config_flask%20python%20checker)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_python_checker.yml) [![config_flask package checker](https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_package_checker?style=flat&label=config_flask%20package%20checker)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package_checker.yml) [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/graphs/contributors)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -30,6 +30,8 @@ other information that should be provided before the modules are installed.
 
 ### Installation
 
+Used next development environment
+
 ![ubuntu linux os](https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/ubuntuxis.png)
 
 Navigate to **[release page](https://github.com/vroncevic/config_flask/releases)** download and extract release archive 📦.
@@ -43,7 +45,7 @@ mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 
 Or You can use docker to create image/container 🚢.
 
-[![config_flask docker checker](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_docker_checker.yml/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_docker_checker.yml)
+[![config_flask docker checker](https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_docker_checker?style=flat&label=config_flask%20docker%20checker)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_docker_checker.yml)
 
 ### Dependencies
 
@@ -78,7 +80,6 @@ Or You can use docker to create image/container 🚢.
 ### Docs
 
 [![Documentation Status](https://readthedocs.org/projects/config-flask/badge/?version=latest)](https://config-flask.readthedocs.io/en/latest/?badge=latest)
- [![Pages build deployment](https://github.com/vroncevic/config_flask/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/pages/pages-build-deployment)
 
 📗 More documentation and info at
 

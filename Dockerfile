@@ -56,3 +56,4 @@ RUN mv /app_server/ /FlaskApp/
 RUN rm -rf /app_server/
 RUN chmod -R 755 /FlaskApp/
 RUN tree /FlaskApp/
+
