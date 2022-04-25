@@ -1,4 +1,4 @@
-name: config_flask py checker
+name: config_flask_python_checker
 on:
   push:
     branches: [ master ]
