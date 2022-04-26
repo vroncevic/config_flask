@@ -1,9 +1,9 @@
 Flask Configuration Mechanism
 ------------------------------
 
-**config_flask** is toolset for configuration setup of Flask App.
+☯️ **config_flask** is toolset for configuration setup of Flask App.
 
-Developed in `python <https://www.python.org/>`_ code.
+Developed in 🐍 `python <https://www.python.org/>`_ code.
 
 |codecov| |circleci|
 
@@ -48,18 +48,18 @@ Installation
 
 .. |ubuntu linux os| image:: https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/ubuntuxis.png
 
-Navigate to release `page`_ download and extract release archive.
+Navigate to release `page`_ download and extract release archive 📦.
 
 .. _page: https://github.com/vroncevic/config_flask/releases
 
-To install modules type the following
+To install **config_flask** 📦 type the following
 
 .. code-block:: bash
 
     tar xvzf config_flask-x.y.z.tar.gz
     mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 
-You can use Docker to create image/container.
+You can use Docker to create image/container 🚢.
 
 |github docker checker|
 
@@ -76,7 +76,7 @@ Dependencies
 Package structure
 ------------------
 
-Expected configuration structure
+🧰 Expected configuration structure
 
 .. code-block:: bash
 
@@ -115,7 +115,7 @@ Copyright (C) 2018 by `vroncevic.github.io/config_flask <https://vroncevic.githu
 it under the same terms as Python itself, either Python version 2.x/3.x or,
 at your option, any later version of Python 3 you may have available.
 
-Lets help and support PSF.
+🌎 🌍 🌏 Lets help and support PSF.
 
 |python software foundation|
 
