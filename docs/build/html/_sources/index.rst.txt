@@ -27,8 +27,8 @@ other information that should be provided before the modules are installed.
 .. |config_flask github contributors| image:: https://img.shields.io/github/contributors/vroncevic/config_flask.svg
    :target: https://github.com/vroncevic/config_flask/graphs/contributors
 
-.. |config_flask documentation Status| image:: https://readthedocs.org/projects/config_flasks/badge/?version=master
-   :target: https://config-flask.readthedocs.io/?badge=master
+.. |config_flask documentation Status| image:: https://readthedocs.org/projects/config-flask/badge/?version=latest
+   :target: https://config-flask.readthedocs.io/en/latest/?badge=latest
 
 .. toctree::
    :maxdepth: 4

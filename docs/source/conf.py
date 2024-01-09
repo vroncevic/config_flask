@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 project: str = 'config_flask'
 project_copyright: str = '2017, https://vroncevic.github.io/config_flask'
 author: str = 'Vladimir Roncevic <elektron.ronca@gmail.com>'
-version: str = '1.7.0'
+version: str = '1.8.0'
 release: str = 'https://github.com/vroncevic/config_flask/releases'
 extensions: List[str] = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', ]
 templates_path: List[str] = ['_templates']

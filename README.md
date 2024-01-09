@@ -45,11 +45,10 @@ Or You can use docker to create image/container.
 ### Dependencies
 
 **config_flask** requires other modules and libraries
+ * coverage
  * Flask
  * Flask-Migrate
  * Flask-Script
- * coverage
- * WTForms
  * Flask-Login
  * Flask-BCrypt
  * Flask-Bootstrap
@@ -57,6 +56,7 @@ Or You can use docker to create image/container.
  * Flask-SQLAlchemy
  * Flask-Testing
  * Flask-WTF
+ * WTForms
 
 ### Package structure
 
@@ -84,7 +84,7 @@ Expected configuration structure
 
 ### Docs
 
-[![Documentation Status](https://readthedocs.org/projects/config_flask/badge/?version=master)](https://config-flask.readthedocs.io/?badge=master)
+[![Documentation Status](https://readthedocs.org/projects/config-flask/badge/?version=latest)](https://config-flask.readthedocs.io/en/latest/?badge=latest)
 
 More documentation and info at
 
