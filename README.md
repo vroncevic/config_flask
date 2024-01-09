@@ -21,7 +21,7 @@ other information that should be provided before the modules are installed.
 - [Package structure](#package-structure)
 - [Docs](#docs)
 - [Contributing](#contributing)
-- [Copyright and licence](#copyright-and-licence)
+- [Copyright and Licence](#copyright-and-licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
