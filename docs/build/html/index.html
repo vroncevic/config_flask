@@ -1,85 +1,60 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flask Configuration Mechanism &mdash; config_flask https://github.com/vroncevic/config_flask/releases documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-    <script src="_static/js/theme.js"></script>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Flask Configuration Mechanism &#8212; config_flask https://github.com/vroncevic/config_flask/releases documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="app_server" href="modules.html" /> 
-</head>
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="app_server"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">config_flask https://github.com/vroncevic/config_flask/releases documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Flask Configuration Mechanism</a></li> 
+      </ul>
+    </div>  
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> config_flask
-          </a>
-              <div class="version">
-                1.6.0
-              </div>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Flask Configuration Mechanism</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">app_server</a></li>
-</ul>
-
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">config_flask</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>Flask Configuration Mechanism</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <section id="flask-configuration-mechanism">
-<h1>Flask Configuration Mechanism<a class="headerlink" href="#flask-configuration-mechanism" title="Permalink to this headline"></a></h1>
-<p>☯️ <strong>config_flask</strong> is toolset for configuration setup of Flask App.</p>
-<p>Developed in 🐍 <a class="reference external" href="https://www.python.org/">python</a> code.</p>
-<p><a class="reference external" href="https://codecov.io/gh/vroncevic/config_flask"><img alt="codecov" src="https://codecov.io/gh/vroncevic/config_flask/branch/dev/graph/badge.svg" /></a> <a class="reference external" href="https://circleci.com/gh/vroncevic/config_flask/tree/master"><img alt="circleci" src="https://circleci.com/gh/vroncevic/config_flask/tree/master.svg" /></a></p>
+<h1>Flask Configuration Mechanism<a class="headerlink" href="#flask-configuration-mechanism" title="Permalink to this heading">¶</a></h1>
+<p><strong>config_flask</strong> is toolset for configuration setup of Flask App.</p>
+<p>Developed in <a class="reference external" href="https://www.python.org/">python</a> code: <strong>100%</strong>.</p>
 <p>The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.</p>
-<p><a class="reference external" href="https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_python_checker"><img alt="python checker" src="https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_python_checker?style=flat&amp;label=config_flask%20python%20checker" /></a> <a class="reference external" href="https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_package_checker"><img alt="python package" src="https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_package_checker?style=flat&amp;label=config_flask%20package%20checker" /></a> <a class="reference external" href="https://github.com/vroncevic/config_flask/issues"><img alt="github issues" src="https://img.shields.io/github/issues/vroncevic/config_flask.svg" /></a> <a class="reference external" href="https://config_flask.readthedocs.io/projects/config_flask/en/master/?badge=master"><img alt="documentation status" src="https://readthedocs.org/projects/config_flask/badge/?version=master" /></a> <a class="reference external" href="https://github.com/vroncevic/config_flask/graphs/contributors"><img alt="github contributors" src="https://img.shields.io/github/contributors/vroncevic/config_flask.svg" /></a></p>
+<p><a class="reference external" href="https://github.com/vroncevic/config_flask/actions/workflows/config_flask_python_checker.yml"><img alt="config_flask python checker" src="https://github.com/vroncevic/config_flask/actions/workflows/config_flask_python_checker.yml/badge.svg" /></a> <a class="reference external" href="https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package.yml"><img alt="config_flask package checker" src="https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package_checker.yml/badge.svg" /></a></p>
+<p><a class="reference external" href="https://github.com/vroncevic/config_flask/issues"><img alt="config_flask github issues" src="https://img.shields.io/github/issues/vroncevic/config_flask.svg" /></a> <a class="reference external" href="https://github.com/vroncevic/config_flask/graphs/contributors"><img alt="config_flask github contributors" src="https://img.shields.io/github/contributors/vroncevic/config_flask.svg" /></a></p>
+<p><a class="reference external" href="https://config-flask.readthedocs.io/?badge=master"><img alt="config_flask documentation Status" src="https://readthedocs.org/projects/config_flasks/badge/?version=master" /></a></p>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Flask Configuration Mechanism</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">app_server</a><ul>
@@ -97,62 +72,71 @@ other information that should be provided before the modules are installed.</p>
 </div>
 </section>
 <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
-<p><img alt="ubuntu linux os" src="https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/ubuntuxis.png" /></p>
-<p>Navigate to release <a class="reference external" href="https://github.com/vroncevic/config_flask/releases">page</a> download and extract release archive 📦.</p>
-<p>To install <strong>config_flask</strong> 📦 type the following</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar xvzf config_flask-x.y.z.tar.gz
-mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h1>
+<p>Navigate to release <a class="reference external" href="https://github.com/vroncevic/config_flask/releases">page</a> download and extract release archive.</p>
+<p>To install <strong>config_flask</strong> type the following</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar<span class="w"> </span>xvzf<span class="w"> </span>config_flask-x.y.z.tar.gz
+mv<span class="w"> </span>config_flask-x.y.z/app_server/configuration<span class="w"> </span>/FlaskApp/app_server/
 </pre></div>
 </div>
-<p>You can use Docker to create image/container 🚢.</p>
-<p><a class="reference external" href="https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_docker_checker"><img alt="github docker checker" src="https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_docker_checker?style=flat&amp;label=config_flask%20docker%20checker" /></a></p>
+<p>You can use Docker to create image/container.</p>
 </section>
 <section id="dependencies">
-<h1>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline"></a></h1>
-<p><strong>config_flask</strong> requires other modules and libraries</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>none</p></li>
+<h1>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading">¶</a></h1>
+<dl class="simple">
+<dt><strong>config_flask</strong> requires other modules and libraries</dt><dd><ul class="simple">
+<li><p>coverage</p></li>
+<li><p>Flask</p></li>
+<li><p>Flask-Migrate</p></li>
+<li><p>Flask-Script</p></li>
+<li><p>Flask-Login</p></li>
+<li><p>Flask-BCrypt</p></li>
+<li><p>Flask-Bootstrap</p></li>
+<li><p>Flask-DebugToolbar</p></li>
+<li><p>Flask-SQLAlchemy</p></li>
+<li><p>Flask-Testing</p></li>
+<li><p>Flask-WTF</p></li>
+<li><p>WTForms</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </section>
 <section id="package-structure">
-<h1>Package structure<a class="headerlink" href="#package-structure" title="Permalink to this headline"></a></h1>
-<p>🧰 Expected configuration structure</p>
+<h1>Package structure<a class="headerlink" href="#package-structure" title="Permalink to this heading">¶</a></h1>
+<p>Expected configuration structure:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>app_server/
-├── configuration/
-│   ├── database/
-│   │   ├── development_config.py
-│   │   ├── __init__.py
-│   │   ├── production_config.py
-│   │   └── test_config.py
-│   ├── development_config.py
-│   ├── __init__.py
-│   ├── mail/
-│   │   ├── development_config.py
-│   │   ├── __init__.py
-│   │   ├── production_config.py
-│   │   └── test_config.py
-│   ├── production_config.py
-│   └── test_config.py
-└── __init__.py
+<span class="w">    </span>├──<span class="w"> </span>configuration/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>database/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>development_config.py
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>__init__.py
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>production_config.py
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>test_config.py
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>development_config.py
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>__init__.py
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>mail/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>development_config.py
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>__init__.py
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>production_config.py
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>test_config.py
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>production_config.py
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>test_config.py
+<span class="w">    </span>└──<span class="w"> </span>__init__.py
 </pre></div>
 </div>
 </section>
 <section id="copyright-and-licence">
-<h1>Copyright and licence<a class="headerlink" href="#copyright-and-licence" title="Permalink to this headline"></a></h1>
-<p><a class="reference external" href="https://www.gnu.org/licenses/gpl-3.0"><img alt="license: gpl v3" src="https://img.shields.io/badge/license-gplv3-blue.svg" /></a> <a class="reference external" href="https://opensource.org/licenses/apache-2.0"><img alt="license: apache 2.0" src="https://img.shields.io/badge/license-apache%202.0-blue.svg" /></a></p>
-<p>Copyright (C) 2018 by <a class="reference external" href="https://vroncevic.github.io/config_flask">vroncevic.github.io/config_flask</a></p>
+<h1>Copyright and licence<a class="headerlink" href="#copyright-and-licence" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://www.gnu.org/licenses/gpl-3.0"><img alt="license: gpl v3" src="https://img.shields.io/badge/License-GPLv3-blue.svg" /></a> <a class="reference external" href="https://opensource.org/licenses/Apache-2.0"><img alt="license: apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" /></a></p>
+<p>Copyright (C) 2017 - 2024 by <a class="reference external" href="https://vroncevic.github.io/config_flask">vroncevic.github.io/config_flask</a></p>
 <p><strong>config_flask</strong> is free software; you can redistribute it and/or modify
-it under the same terms as Python itself, either Python version 2.x/3.x or,
+it under the same terms as Python itself, either Python version 3.x or,
 at your option, any later version of Python 3 you may have available.</p>
-<p>🌎 🌍 🌏 Lets help and support PSF.</p>
+<p>Lets help and support PSF.</p>
 <p><a class="reference external" href="https://www.python.org/psf/"><img alt="python software foundation" src="https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/psf-logo-alpha.png" /></a></p>
-<p><a class="reference external" href="https://psfmember.org/index.php?q=civicrm/contribute/transact&amp;reset=1&amp;id=2"><img alt="donate" src="https://www.paypalobjects.com/en_us/i/btn/btn_donatecc_lg.gif" /></a></p>
+<p><a class="reference external" href="https://www.python.org/psf/donations/"><img alt="donate" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" /></a></p>
 </section>
 <section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline"></a></h1>
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
@@ -161,33 +145,69 @@ at your option, any later version of Python 3 you may have available.</p>
 </section>
 
 
-           </div>
+            <div class="clearer"></div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="modules.html" class="btn btn-neutral float-right" title="app_server" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2017, Vladimir Roncevic &lt;elektron.ronca@gmail.com&gt;.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Flask Configuration Mechanism</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li><a class="reference internal" href="#package-structure">Package structure</a></li>
+<li><a class="reference internal" href="#copyright-and-licence">Copyright and licence</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
 
-</body>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="modules.html"
+                          title="next chapter">app_server</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="app_server"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">config_flask https://github.com/vroncevic/config_flask/releases documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Flask Configuration Mechanism</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, https://vroncevic.github.io/config_flask.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    </div>
+  </body>
 </html>

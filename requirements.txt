@@ -1,8 +1,7 @@
+coverage
 Flask
 Flask-Migrate
 Flask-Script
-coverage
-WTForms
 Flask-Login
 Flask-BCrypt
 Flask-Bootstrap
@@ -10,3 +9,4 @@ Flask-DebugToolbar
 Flask-SQLAlchemy
 Flask-Testing
 Flask-WTF
+WTForms

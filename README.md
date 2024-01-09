@@ -2,18 +2,15 @@
 
 # Flask Configuration Mechanism
 
-☯️ **config_flask** is toolset for configuration setup of Flask Web App.
+**config_flask** is toolset for configuration setup of Flask App.
 
-Developed in 🐍 **[python](https://www.python.org/)** code.
-
-[![codecov](https://codecov.io/gh/vroncevic/config_flask/branch/master/graph/badge.svg?token=E7MQUHES7I)](https://codecov.io/gh/vroncevic/config_flask)
-[![circleci](https://circleci.com/gh/vroncevic/config_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/config_flask/tree/master)
+Developed in **[python](https://www.python.org/)** code: **100%**.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
 
-[![config_flask python checker](https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_python_checker?style=flat&label=config_flask%20python%20checker)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_python_checker.yml) [![config_flask package checker](https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_package_checker?style=flat&label=config_flask%20package%20checker)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package_checker.yml) [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/graphs/contributors)
+[![config_flask_python_checker](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_python_checker.yml/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_python_checker.yml) [![config_flask_package_checker](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package_checker.yml/badge.svg)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_package_checker.yml) [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/config_flask.svg)](https://github.com/vroncevic/config_flask/graphs/contributors)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -32,76 +29,84 @@ other information that should be provided before the modules are installed.
 
 Used next development environment
 
-![ubuntu linux os](https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/ubuntuxis.png)
+![debian linux os](https://raw.githubusercontent.com/vroncevic/ats_utilities/dev/docs/debtux.png)
 
-Navigate to **[release page](https://github.com/vroncevic/config_flask/releases)** download and extract release archive 📦.
+Navigate to **[release page](https://github.com/vroncevic/config_flask/releases)** download and extract release archive.
 
-To install modules type the following
+To install **config_flask** type the following
 
 ```bash
 tar xvzf config_flask-x.y.z.tar.gz
 mv config_flask-x.y.z/app_server/configuration /FlaskApp/app_server/
 ```
 
-Or You can use docker to create image/container 🚢.
-
-[![config_flask docker checker](https://img.shields.io/github/workflow/status/vroncevic/config_flask/config_flask_docker_checker?style=flat&label=config_flask%20docker%20checker)](https://github.com/vroncevic/config_flask/actions/workflows/config_flask_docker_checker.yml)
+Or You can use docker to create image/container.
 
 ### Dependencies
 
 **config_flask** requires other modules and libraries
-
-    * none
+ * Flask
+ * Flask-Migrate
+ * Flask-Script
+ * coverage
+ * WTForms
+ * Flask-Login
+ * Flask-BCrypt
+ * Flask-Bootstrap
+ * Flask-DebugToolbar
+ * Flask-SQLAlchemy
+ * Flask-Testing
+ * Flask-WTF
 
 ### Package structure
 
-🧰 Expected configuration structure
+Expected configuration structure
 
 ```bash
- app_server/
- ├── configuration/
- │   ├── database/
- │   │   ├── development_config.py
- │   │   ├── __init__.py
- │   │   ├── production_config.py
- │   │   └── test_config.py
- │   ├── development_config.py
- │   ├── __init__.py
- │   ├── mail/
- │   │   ├── development_config.py
- │   │   ├── __init__.py
- │   │   ├── production_config.py
- │   │   └── test_config.py
- │   ├── production_config.py
- │   └── test_config.py
- └── __init__.py
+    app_server/
+        ├── configuration/
+        │   ├── database/
+        │   │   ├── development_config.py
+        │   │   ├── __init__.py
+        │   │   ├── production_config.py
+        │   │   └── test_config.py
+        │   ├── development_config.py
+        │   ├── __init__.py
+        │   ├── mail/
+        │   │   ├── development_config.py
+        │   │   ├── __init__.py
+        │   │   ├── production_config.py
+        │   │   └── test_config.py
+        │   ├── production_config.py
+        │   └── test_config.py
+        └── __init__.py
 ```
 
 ### Docs
 
-[![Documentation Status](https://readthedocs.org/projects/config-flask/badge/?version=latest)](https://config-flask.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/config_flask/badge/?version=master)](https://config-flask.readthedocs.io/?badge=master)
 
-📗 More documentation and info at
+More documentation and info at
 
-- [config_flask.readthedocs.io](https://config_flask.readthedocs.io/en/latest/)
-- [www.python.org](https://www.python.org/)
+* [config_flask.readthedocs.io](https://config-flask.readthedocs.io/)
+* [www.python.org](https://www.python.org/)
 
 ### Contributing
 
-🌎 🌍 🌏 [Contributing to config_flask](CONTRIBUTING.md)
+[Contributing to config_flask](CONTRIBUTING.md)
 
-### Copyright and licence
+### Copyright and Licence
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![license: gpl v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![license apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Copyright (C) 2017 by [vroncevic.github.io/config_flask](https://vroncevic.github.io/config_flask/)
+Copyright (C) 2017 - 2024 by [vroncevic.github.io/config_flask](https://vroncevic.github.io/config_flask/)
 
 **config_flask** is free software; you can redistribute it and/or modify
-it under the same terms as Python itself, either Python version 2.x/3.x or,
+it under the same terms as Python itself, either Python version 3.x or,
 at your option, any later version of Python 3 you may have available.
 
 Lets help and support PSF.
 
 [![Python Software Foundation](https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/psf-logo-alpha.png)](https://www.python.org/psf/)
 
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://psfmember.org/index.php?q=civicrm/contribute/transact&reset=1&id=2)
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.python.org/psf/donations/)
