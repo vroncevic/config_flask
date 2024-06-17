@@ -2,7 +2,7 @@
 
 '''
 Module
-    production_config.py
+    prod_config.py
 Copyright
     Copyright (C) 2017 - 2024 Vladimir Roncevic <elektron.ronca@gmail.com>
     config_flask is free software: you can redistribute it and/or modify it
@@ -31,9 +31,8 @@ except ImportError as ats_error_message:
 
 __copyright__ = '(C) 2024, https://vroncevic.github.io/config_flask'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
-__credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
-__version__ = '1.8.0'
+__version__ = '1.8.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -60,7 +59,7 @@ class ProdConfig(BaseConfig):
     DB_USER: str = 'mydbuser'
     DB_PASSWORD: str = 'mydbpassword'
     DB_HOST: str = '127.0.0.1'
-    DB_PORT: str = 5432
+    DB_PORT: int = 5432
     DB_NAME: str = 'manage_users'
     DB_DIALECT: str = 'postgresql'
     DB_LOGIN: str = f'{DB_USER}:{DB_PASSWORD}'

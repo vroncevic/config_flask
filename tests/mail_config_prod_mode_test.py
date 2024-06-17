@@ -36,7 +36,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, https://vroncevic.github.io/config_flask'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
-__version__ = '1.8.0'
+__version__ = '1.8.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -67,16 +67,16 @@ class MailProdTestCase(unittest.TestCase):
                 | test_mail_recipient - Test mail recipient check.
     '''
 
-    def setUp(self):
+    def setUp(self) -> None:
         '''Call before test cases.'''
-        self.mail_server = ProdConfig.MAIL_SERVER
-        self.mail_port = ProdConfig.MAIL_PORT
-        self.mail_use_ssl = ProdConfig.MAIL_USE_SSL
-        self.mail_username = ProdConfig.MAIL_USERNAME
-        self.mail_password = ProdConfig.MAIL_PASSWORD
-        self.mail_recipient = ProdConfig.MAIL_RECIPIENT
+        self.mail_server: str | None = ProdConfig.MAIL_SERVER
+        self.mail_port: int | None = ProdConfig.MAIL_PORT
+        self.mail_use_ssl: bool | None = ProdConfig.MAIL_USE_SSL
+        self.mail_username: str | None = ProdConfig.MAIL_USERNAME
+        self.mail_password: str | None = ProdConfig.MAIL_PASSWORD
+        self.mail_recipient: str | None = ProdConfig.MAIL_RECIPIENT
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         '''Call after test cases.'''
         self.mail_server = None
         self.mail_port = None
@@ -85,27 +85,27 @@ class MailProdTestCase(unittest.TestCase):
         self.mail_password = None
         self.mail_recipient = None
 
-    def test_mail_server(self):
+    def test_mail_server(self) -> None:
         '''Test mail server check.'''
         self.assertEqual(isinstance(self.mail_server, str), True)
 
-    def test_mail_port(self):
+    def test_mail_port(self) -> None:
         '''Test mail port check.'''
         self.assertEqual(self.mail_port, 465)
 
-    def test_mail_use_ssl(self):
+    def test_mail_use_ssl(self) -> None:
         '''Test mail use ssl check.'''
         self.assertEqual(self.mail_use_ssl, True)
 
-    def test_mail_username(self):
+    def test_mail_username(self) -> None:
         '''Test mail username check.'''
         self.assertEqual(isinstance(self.mail_username, str), True)
 
-    def test_mail_password(self):
+    def test_mail_password(self) -> None:
         '''Test mail password check.'''
         self.assertEqual(isinstance(self.mail_password, str), True)
 
-    def test_mail_recipient(self):
+    def test_mail_recipient(self) -> None:
         '''Test mail received check.'''
         self.assertEqual(isinstance(self.mail_recipient, str), True)
 
