@@ -33,7 +33,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, https://vroncevic.github.io/config_flask'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
-__version__ = '1.8.0'
+__version__ = '1.8.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -47,9 +47,9 @@ class TestConfig(BaseConfig):
         It defines:
 
             :attributes:
-                | MAIL_USERNAME - Mail username.
-                | MAIL_PASSWORD - Mail password.
-                | MAIL_RECIPIENT - Mail username.
+                | MAIL_USERNAME - Mail username (sender).
+                | MAIL_PASSWORD - Mail password (sender).
+                | MAIL_RECIPIENT - Mail username (recipient).
             :methods:
                 | None
     '''

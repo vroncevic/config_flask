@@ -36,7 +36,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, https://vroncevic.github.io/config_flask'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
-__version__ = '1.8.0'
+__version__ = '1.8.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -50,7 +50,7 @@ class GenConfigDevTestCase(unittest.TestCase):
         It defines:
 
             :attributes:
-                | debug - Debug enabled.
+                | debug_cfg - Debug enabled.
                 | wtf_csrf_enabled - CSRF enabled.
                 | debug_tb_enabled - Debug TB enabled.
                 | debug_tbir - DEBUG TB INTERCEPT REDIRECTS.
@@ -65,39 +65,39 @@ class GenConfigDevTestCase(unittest.TestCase):
                 | test_bcrypt_log_rounds - Test BCRYPT LOG ROUNDS check.
     '''
 
-    def setUp(self):
+    def setUp(self) -> None:
         '''Call before test cases.'''
-        self.debug = DevConfig.DEBUG
-        self.wtf_csrf_enabled = DevConfig.WTF_CSRF_ENABLED
-        self.debug_tb_enabled = DevConfig.DEBUG_TB_ENABLED
-        self.debug_tbir = DevConfig.DEBUG_TB_INTERCEPT_REDIRECTS
-        self.bcrypt_log_rounds = DevConfig.BCRYPT_LOG_ROUNDS
+        self.debug_cfg: bool | None = DevConfig.DEBUG
+        self.wtf_csrf_enabled: bool | None = DevConfig.WTF_CSRF_ENABLED
+        self.debug_tb_enabled: bool | None = DevConfig.DEBUG_TB_ENABLED
+        self.debug_tbir: bool | None = DevConfig.DEBUG_TB_INTERCEPT_REDIRECTS
+        self.bcrypt_log_rounds: int | None = DevConfig.BCRYPT_LOG_ROUNDS
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         '''Call after test cases.'''
-        self.debug = None
+        self.debug_cfg = None
         self.wtf_csrf_enabled = None
         self.debug_tb_enabled = None
         self.debug_tbir = None
         self.bcrypt_log_rounds = None
 
-    def test_debug(self):
+    def test_debug(self) -> None:
         '''Test debug check.'''
-        self.assertEqual(self.debug, True)
+        self.assertEqual(self.debug_cfg, True)
 
-    def test_wtf_csrf_enabled(self):
+    def test_wtf_csrf_enabled(self) -> None:
         '''Test CSRF check.'''
         self.assertEqual(self.wtf_csrf_enabled, False)
 
-    def test_debug_tb_enabled(self):
+    def test_debug_tb_enabled(self) -> None:
         '''Test DEBUG TB check.'''
         self.assertEqual(self.debug_tb_enabled, True)
 
-    def test_debug_tbir(self):
+    def test_debug_tbir(self) -> None:
         '''Test DEBUG TB INTERCEPT REDIRECTS check.'''
         self.assertEqual(self.debug_tbir, False)
 
-    def test_bcrypt_log_rounds(self):
+    def test_bcrypt_log_rounds(self) -> None:
         '''Test BCRYPT LOG ROUNDS check.'''
         self.assertEqual(self.bcrypt_log_rounds, 4)
 

@@ -31,9 +31,8 @@ except ImportError as ats_error_message:
 
 __copyright__ = '(C) 2024, https://vroncevic.github.io/config_flask'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
-__credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
-__version__ = '1.8.0'
+__version__ = '1.8.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'

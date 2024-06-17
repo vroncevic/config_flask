@@ -36,7 +36,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, https://vroncevic.github.io/config_flask'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
-__version__ = '1.8.0'
+__version__ = '1.8.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -50,8 +50,8 @@ class DBTestTestCase(unittest.TestCase):
         It defines:
 
             :attributes:
-                | track_modifications - Test track modifications check.
-                | sqlalchemy_database_uri - Test sqlalchemy database uri check.
+                | track - Test track modifications check.
+                | db_uri - Test sqlalchemy database uri check.
             :methods:
                 | setUp - Call before test cases.
                 | tearDown - Call after test cases.
@@ -61,21 +61,21 @@ class DBTestTestCase(unittest.TestCase):
 
     def setUp(self):
         '''Call before test case.'''
-        self.track_modifications = TestConfig.SQLALCHEMY_TRACK_MODIFICATIONS
-        self.sqlalchemy_database_uri = TestConfig.SQLALCHEMY_DATABASE_URI
+        self.track: bool | None = TestConfig.SQLALCHEMY_TRACK_MODIFICATIONS
+        self.db_uri: str | None = TestConfig.SQLALCHEMY_DATABASE_URI
 
     def tearDown(self):
         '''Call after test case.'''
-        self.track_modifications = None
-        self.sqlalchemy_database_uri = None
+        self.track = None
+        self.db_uri = None
 
-    def test_track_modifications(self):
+    def test_track_modifications(self) -> None:
         '''Test sqlalchemy track modifications check.'''
-        self.assertEqual(self.track_modifications, False)
+        self.assertEqual(self.track, False)
 
-    def test_database_uri(self):
+    def test_database_uri(self) -> None:
         '''Test sqlalchemy database uri check.'''
-        self.assertEqual(isinstance(self.sqlalchemy_database_uri, str), True)
+        self.assertEqual(isinstance(self.db_uri, str), True)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/config_flask_logo.png" width="25%">
-
 # Flask Configuration Mechanism
+
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/config_flask/dev/docs/config_flask_logo.png" width="25%">
 
 **config_flask** is toolset for configuration setup of Flask App.
 

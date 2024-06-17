@@ -36,7 +36,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, https://vroncevic.github.io/config_flask'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/config_flask/blob/dev/LICENSE'
-__version__ = '1.8.0'
+__version__ = '1.8.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -50,13 +50,13 @@ class DBDevTestCase(unittest.TestCase):
         It defines:
 
             :attributes:
-                | track_modifications - Test track modifications check.
+                | track - Test track modifications check.
                 | db_user - Test db user check.
                 | db_password - Test db password check.
                 | db_host - Test db host check.
                 | db_port - Test db port check.
                 | db_dialect - Test db dialect check.
-                | sqlalchemy_database_uri - Test sqlalchemy database uri check.
+                | db_uri - Test sqlalchemy database uri check.
             :methods:
                 | setUp - Call before test cases.
                 | tearDown - Call after test cases.
@@ -69,53 +69,53 @@ class DBDevTestCase(unittest.TestCase):
                 | test_database_uri - Test sqlalchemy database uri check.
     '''
 
-    def setUp(self):
+    def setUp(self) -> None:
         '''Call before test case.'''
-        self.track_modifications = DevConfig.SQLALCHEMY_TRACK_MODIFICATIONS
-        self.db_user = DevConfig.DB_USER
-        self.db_password = DevConfig.DB_PASSWORD
-        self.db_host = DevConfig.DB_HOST
-        self.db_port = DevConfig.DB_PORT
-        self.db_dialect = DevConfig.DB_DIALECT
-        self.sqlalchemy_database_uri = DevConfig.SQLALCHEMY_DATABASE_URI
+        self.track: bool | None = DevConfig.SQLALCHEMY_TRACK_MODIFICATIONS
+        self.db_user: str | None = DevConfig.DB_USER
+        self.db_password: str | None = DevConfig.DB_PASSWORD
+        self.db_host: str | None = DevConfig.DB_HOST
+        self.db_port: int | None = DevConfig.DB_PORT
+        self.db_dialect: str | None = DevConfig.DB_DIALECT
+        self.db_uri: str | None = DevConfig.SQLALCHEMY_DATABASE_URI
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         '''Call after test case.'''
-        self.track_modifications = None
+        self.track = None
         self.db_user = None
         self.db_password = None
         self.db_host = None
         self.db_port = None
         self.db_dialect = None
-        self.sqlalchemy_database_uri = None
+        self.db_uri = None
 
-    def test_track_modifications(self):
+    def test_track_modifications(self) -> None:
         '''Test sqlalchemy track modifications check.'''
-        self.assertEqual(self.track_modifications, False)
+        self.assertEqual(self.track, False)
 
-    def test_db_user(self):
+    def test_db_user(self) -> None:
         '''Test db user check.'''
         self.assertEqual(isinstance(self.db_user, str), True)
 
-    def test_db_password(self):
+    def test_db_password(self) -> None:
         '''Test db password check.'''
         self.assertEqual(isinstance(self.db_password, str), True)
 
-    def test_db_host(self):
+    def test_db_host(self) -> None:
         '''Test db host check.'''
         self.assertEqual(isinstance(self.db_host, str), True)
 
-    def test_db_port(self):
+    def test_db_port(self) -> None:
         '''Test db port check.'''
         self.assertEqual(self.db_port, 3306)
 
-    def test_db_dialect(self):
+    def test_db_dialect(self) -> None:
         '''Test db dialect check.'''
         self.assertEqual(isinstance(self.db_dialect, str), True)
 
-    def test_database_uri(self):
+    def test_database_uri(self) -> None:
         '''Test sqlalchemy database uri check.'''
-        self.assertEqual(isinstance(self.sqlalchemy_database_uri, str), True)
+        self.assertEqual(isinstance(self.db_uri, str), True)
 
 
 if __name__ == '__main__':
